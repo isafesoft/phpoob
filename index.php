@@ -42,12 +42,14 @@ class  ShopProduct
 	/**
 	* 
 	*/
-	class ClassName extends AnotherClass
+	class BookProduct extends ShopProduct
 	{
 		
-		function __construct(argument)
+		$public $numPages;
+		function __construct($title, $numPages)
 		{
-			# code...
+			parent::__construct($title);
+			$this->numPages = $numPages;
 		}
 	}
 
